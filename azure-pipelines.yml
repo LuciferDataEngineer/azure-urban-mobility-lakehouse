@@ -1,0 +1,63 @@
+# Validation is free of Azure credentials. Deployment is opt-in and has not run.
+trigger: none
+pr: none
+parameters:
+- name: deployLab
+  type: boolean
+  default: false
+- name: azureServiceConnection
+  type: string
+  default: UNCONFIGURED
+- name: resourceGroup
+  type: string
+  default: UNCONFIGURED
+- name: budgetApprovalReference
+  type: string
+  default: UNAPPROVED
+
+stages:
+- stage: Validate
+  jobs:
+  - job: Offline
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    - checkout: self
+    - script: |
+        set -eu
+        python3 -m unittest discover -s azure -p 'test_*.py' -v
+        python3 -m py_compile azure/databricks/contract.py azure/databricks/transform.py azure/databricks/render_job.py
+        az bicep install --version v0.46.1
+        python3 azure/validate_infra.py
+      displayName: Validate Python and compile Bicep without deployment
+- ${{ if eq(parameters.deployLab, true) }}:
+  - stage: DeployApprovedLab
+    dependsOn: Validate
+    condition: succeeded()
+    jobs:
+    - deployment: Foundation
+      # Configure independent environment approvals/checks in Azure DevOps first.
+      environment: mobility-lab-approved
+      pool:
+        vmImage: ubuntu-latest
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - checkout: self
+            - task: AzureCLI@2
+              displayName: Deploy explicitly approved lab foundation
+              inputs:
+                azureSubscription: ${{ parameters.azureServiceConnection }}
+                scriptType: bash
+                scriptLocation: inlineScript
+                inlineScript: |
+                  set -eu
+                  test "$MOBILITY_BUDGET_REF" != UNAPPROVED
+                  test -n "$MOBILITY_BUDGET_REF"
+                  test "$MOBILITY_RG" != UNCONFIGURED
+                  az bicep build --file infra/main.bicep --outfile "$(Agent.TempDirectory)/main.json"
+                  az deployment group create --resource-group "$MOBILITY_RG" --template-file "$(Agent.TempDirectory)/main.json" --parameters deployLab=true environment=dev
+              env:
+                MOBILITY_BUDGET_REF: ${{ parameters.budgetApprovalReference }}
+                MOBILITY_RG: ${{ parameters.resourceGroup }}

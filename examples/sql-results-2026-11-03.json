@@ -1,0 +1,456 @@
+{
+  "query_1": [
+    {
+      "source_month": "2024-01",
+      "source_sha256": "c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510",
+      "raw_rows": 2964624,
+      "accepted_rows": 2963736,
+      "quarantined_rows": 888,
+      "conserves_rows": true
+    },
+    {
+      "source_month": "2024-02",
+      "source_sha256": "c76c43c18c6c6664080dd920baab4928988d5786a6b65980792ca7cd796f9f20",
+      "raw_rows": 3007526,
+      "accepted_rows": 3006708,
+      "quarantined_rows": 818,
+      "conserves_rows": true
+    },
+    {
+      "source_month": "2024-03",
+      "source_sha256": "2d4cdc8fb96726cdd3803b13b02d2e61e71d45720aff0ebc693a8bdd1f249823",
+      "raw_rows": 3582628,
+      "accepted_rows": 3581477,
+      "quarantined_rows": 1151,
+      "conserves_rows": true
+    }
+  ],
+  "query_2": [
+    {
+      "source_month": "2024-01",
+      "negative_adjustment": false,
+      "records": 2926173,
+      "signed_fares_usd": "54558310.06",
+      "signed_total_amount_usd": "80302017.00"
+    },
+    {
+      "source_month": "2024-01",
+      "negative_adjustment": true,
+      "records": 37563,
+      "signed_fares_usd": "-714238.74",
+      "signed_total_amount_usd": "-888085.09"
+    },
+    {
+      "source_month": "2024-02",
+      "negative_adjustment": false,
+      "records": 2965976,
+      "signed_fares_usd": "54999685.38",
+      "signed_total_amount_usd": "80960586.22"
+    },
+    {
+      "source_month": "2024-02",
+      "negative_adjustment": true,
+      "records": 40732,
+      "signed_fares_usd": "-738531.10",
+      "signed_total_amount_usd": "-907337.10"
+    },
+    {
+      "source_month": "2024-03",
+      "negative_adjustment": false,
+      "records": 3522877,
+      "signed_fares_usd": "67865575.69",
+      "signed_total_amount_usd": "98267726.92"
+    },
+    {
+      "source_month": "2024-03",
+      "negative_adjustment": true,
+      "records": 58600,
+      "signed_fares_usd": "-959582.20",
+      "signed_total_amount_usd": "-1136628.72"
+    }
+  ],
+  "query_3": [
+    {
+      "pickup_zone_id": 161,
+      "records": 447728,
+      "mean_total_amount_usd": 24.4043692599078
+    },
+    {
+      "pickup_zone_id": 237,
+      "records": 434149,
+      "mean_total_amount_usd": 20.195866580367568
+    },
+    {
+      "pickup_zone_id": 132,
+      "records": 416288,
+      "mean_total_amount_usd": 81.36001263548312
+    },
+    {
+      "pickup_zone_id": 236,
+      "records": 412314,
+      "mean_total_amount_usd": 20.696013159873303
+    },
+    {
+      "pickup_zone_id": 162,
+      "records": 332155,
+      "mean_total_amount_usd": 23.801825352621517
+    },
+    {
+      "pickup_zone_id": 230,
+      "records": 325593,
+      "mean_total_amount_usd": 27.510700721452856
+    },
+    {
+      "pickup_zone_id": 186,
+      "records": 315427,
+      "mean_total_amount_usd": 24.648648784029266
+    },
+    {
+      "pickup_zone_id": 142,
+      "records": 312276,
+      "mean_total_amount_usd": 21.623754979569355
+    },
+    {
+      "pickup_zone_id": 138,
+      "records": 281202,
+      "mean_total_amount_usd": 66.93369880015078
+    },
+    {
+      "pickup_zone_id": 239,
+      "records": 278423,
+      "mean_total_amount_usd": 21.591825459821926
+    },
+    {
+      "pickup_zone_id": 163,
+      "records": 272476,
+      "mean_total_amount_usd": 24.099525279290653
+    },
+    {
+      "pickup_zone_id": 170,
+      "records": 268875,
+      "mean_total_amount_usd": 23.59273718270572
+    },
+    {
+      "pickup_zone_id": 234,
+      "records": 254874,
+      "mean_total_amount_usd": 22.20059547070317
+    },
+    {
+      "pickup_zone_id": 68,
+      "records": 249674,
+      "mean_total_amount_usd": 25.178007361599523
+    },
+    {
+      "pickup_zone_id": 48,
+      "records": 242748,
+      "mean_total_amount_usd": 23.442852258309028
+    },
+    {
+      "pickup_zone_id": 79,
+      "records": 231442,
+      "mean_total_amount_usd": 22.48651644904555
+    },
+    {
+      "pickup_zone_id": 141,
+      "records": 226243,
+      "mean_total_amount_usd": 20.60047294280928
+    },
+    {
+      "pickup_zone_id": 249,
+      "records": 225979,
+      "mean_total_amount_usd": 22.564597108580884
+    },
+    {
+      "pickup_zone_id": 164,
+      "records": 212602,
+      "mean_total_amount_usd": 24.112940753144372
+    },
+    {
+      "pickup_zone_id": 140,
+      "records": 196749,
+      "mean_total_amount_usd": 22.74337973763526
+    }
+  ],
+  "query_4": [
+    {
+      "civil_hour": 0,
+      "records": 264103,
+      "mean_civil_duration_seconds": 887.4570186631731
+    },
+    {
+      "civil_hour": 1,
+      "records": 177642,
+      "mean_civil_duration_seconds": 838.6222571238784
+    },
+    {
+      "civil_hour": 2,
+      "records": 116728,
+      "mean_civil_duration_seconds": 779.2069854704955
+    },
+    {
+      "civil_hour": 3,
+      "records": 80200,
+      "mean_civil_duration_seconds": 789.3740399002494
+    },
+    {
+      "civil_hour": 4,
+      "records": 56435,
+      "mean_civil_duration_seconds": 912.0231948259059
+    },
+    {
+      "civil_hour": 5,
+      "records": 58490,
+      "mean_civil_duration_seconds": 990.5558557018294
+    },
+    {
+      "civil_hour": 6,
+      "records": 129882,
+      "mean_civil_duration_seconds": 985.7750034646833
+    },
+    {
+      "civil_hour": 7,
+      "records": 261415,
+      "mean_civil_duration_seconds": 941.5390126809862
+    },
+    {
+      "civil_hour": 8,
+      "records": 367422,
+      "mean_civil_duration_seconds": 942.7017108393073
+    },
+    {
+      "civil_hour": 9,
+      "records": 400729,
+      "mean_civil_duration_seconds": 952.4734097108021
+    },
+    {
+      "civil_hour": 10,
+      "records": 424066,
+      "mean_civil_duration_seconds": 977.0287030792376
+    },
+    {
+      "civil_hour": 11,
+      "records": 457259,
+      "mean_civil_duration_seconds": 981.493619589773
+    },
+    {
+      "civil_hour": 12,
+      "records": 502245,
+      "mean_civil_duration_seconds": 1000.4916146502205
+    },
+    {
+      "civil_hour": 13,
+      "records": 518251,
+      "mean_civil_duration_seconds": 1037.1051093003198
+    },
+    {
+      "civil_hour": 14,
+      "records": 555179,
+      "mean_civil_duration_seconds": 1099.8960767608285
+    },
+    {
+      "civil_hour": 15,
+      "records": 572749,
+      "mean_civil_duration_seconds": 1120.4909235982952
+    },
+    {
+      "civil_hour": 16,
+      "records": 584199,
+      "mean_civil_duration_seconds": 1111.6285392477564
+    },
+    {
+      "civil_hour": 17,
+      "records": 644988,
+      "mean_civil_duration_seconds": 1042.201290566646
+    },
+    {
+      "civil_hour": 18,
+      "records": 681097,
+      "mean_civil_duration_seconds": 941.0851743584248
+    },
+    {
+      "civil_hour": 19,
+      "records": 604826,
+      "mean_civil_duration_seconds": 895.6243845337336
+    },
+    {
+      "civil_hour": 20,
+      "records": 543114,
+      "mean_civil_duration_seconds": 868.5870388168967
+    },
+    {
+      "civil_hour": 21,
+      "records": 542913,
+      "mean_civil_duration_seconds": 865.5539580006373
+    },
+    {
+      "civil_hour": 22,
+      "records": 492701,
+      "mean_civil_duration_seconds": 895.2164314665487
+    },
+    {
+      "civil_hour": 23,
+      "records": 378393,
+      "mean_civil_duration_seconds": 918.1148911317069
+    }
+  ],
+  "query_5": [
+    {
+      "source_month": "2024-01",
+      "reason": "nonpositive_duration",
+      "row_count": 870
+    },
+    {
+      "source_month": "2024-01",
+      "reason": "pickup_outside_source_month",
+      "row_count": 18
+    },
+    {
+      "source_month": "2024-02",
+      "reason": "nonpositive_duration",
+      "row_count": 803
+    },
+    {
+      "source_month": "2024-02",
+      "reason": "pickup_outside_source_month",
+      "row_count": 15
+    },
+    {
+      "source_month": "2024-03",
+      "reason": "nonpositive_duration",
+      "row_count": 1128
+    },
+    {
+      "source_month": "2024-03",
+      "reason": "pickup_outside_source_month",
+      "row_count": 23
+    }
+  ],
+  "query_6": [
+    {
+      "source_month": "2024-01",
+      "source_sha256": "c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510",
+      "captured_at": "2026-11-02T22:05:51.876129",
+      "accepted_rows": 2963736,
+      "quarantined_rows": 888,
+      "is_current": true
+    },
+    {
+      "source_month": "2024-02",
+      "source_sha256": "c76c43c18c6c6664080dd920baab4928988d5786a6b65980792ca7cd796f9f20",
+      "captured_at": "2026-11-02T22:06:38.614755",
+      "accepted_rows": 3006708,
+      "quarantined_rows": 818,
+      "is_current": true
+    },
+    {
+      "source_month": "2024-03",
+      "source_sha256": "2d4cdc8fb96726cdd3803b13b02d2e61e71d45720aff0ebc693a8bdd1f249823",
+      "captured_at": "2026-11-02T22:06:41.942361",
+      "accepted_rows": 3581477,
+      "quarantined_rows": 1151,
+      "is_current": true
+    }
+  ],
+  "query_7": [
+    {
+      "status": "committed",
+      "attempts": 9,
+      "replays": 6
+    }
+  ],
+  "query_8": [
+    {
+      "source_month": "2024-01",
+      "candidate_duplicate_rows": 0,
+      "candidate_fraction": 0.0
+    },
+    {
+      "source_month": "2024-02",
+      "candidate_duplicate_rows": 1,
+      "candidate_fraction": 3.32589662847207e-07
+    },
+    {
+      "source_month": "2024-03",
+      "candidate_duplicate_rows": 0,
+      "candidate_fraction": 0.0
+    }
+  ],
+  "top_pickup_zones": [
+    {
+      "pickup_zone_id": 161,
+      "Borough": "Manhattan",
+      "Zone": "Midtown Center",
+      "records": 447728,
+      "recorded_charges_usd": "10926519.44"
+    },
+    {
+      "pickup_zone_id": 237,
+      "Borough": "Manhattan",
+      "Zone": "Upper East Side South",
+      "records": 434149,
+      "recorded_charges_usd": "8768015.28"
+    },
+    {
+      "pickup_zone_id": 132,
+      "Borough": "Queens",
+      "Zone": "JFK Airport",
+      "records": 416288,
+      "recorded_charges_usd": "33869196.94"
+    },
+    {
+      "pickup_zone_id": 236,
+      "Borough": "Manhattan",
+      "Zone": "Upper East Side North",
+      "records": 412314,
+      "recorded_charges_usd": "8533255.97"
+    },
+    {
+      "pickup_zone_id": 162,
+      "Borough": "Manhattan",
+      "Zone": "Midtown East",
+      "records": 332155,
+      "recorded_charges_usd": "7905895.30"
+    },
+    {
+      "pickup_zone_id": 230,
+      "Borough": "Manhattan",
+      "Zone": "Times Sq/Theatre District",
+      "records": 325593,
+      "recorded_charges_usd": "8957291.58"
+    },
+    {
+      "pickup_zone_id": 186,
+      "Borough": "Manhattan",
+      "Zone": "Penn Station/Madison Sq West",
+      "records": 315427,
+      "recorded_charges_usd": "7774849.34"
+    },
+    {
+      "pickup_zone_id": 142,
+      "Borough": "Manhattan",
+      "Zone": "Lincoln Square East",
+      "records": 312276,
+      "recorded_charges_usd": "6752579.71"
+    },
+    {
+      "pickup_zone_id": 138,
+      "Borough": "Queens",
+      "Zone": "LaGuardia Airport",
+      "records": 281202,
+      "recorded_charges_usd": "18821889.97"
+    },
+    {
+      "pickup_zone_id": 239,
+      "Borough": "Manhattan",
+      "Zone": "Upper West Side South",
+      "records": 278423,
+      "recorded_charges_usd": "6011660.82"
+    }
+  ],
+  "zone_join_validation": {
+    "records_before": 9551921,
+    "records_after": 9551921,
+    "unmatched_hourly_groups": 0,
+    "lookup_sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed"
+  }
+}

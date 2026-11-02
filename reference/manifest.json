@@ -1,0 +1,10 @@
+{
+  "source_url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv",
+  "accessed_at_utc": "2026-11-02T22:02:52.326355+00:00",
+  "sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed",
+  "bytes": 12331,
+  "rows": 265,
+  "grain": "LocationID",
+  "historical_caveat": "Lookup captured November 2026; not asserted to be the lookup in force in 2024.",
+  "attribution": "NYC Taxi & Limousine Commission; NYC Open Data terms; see docs/SOURCES.md."
+}

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-urban-mobility-lakehouse"
+version = "0.1.0"
+description = "A locally verified TLC source-version lakehouse with an explicitly unvalidated Azure deployment target"
+requires-python = ">=3.11"
+dependencies = ["duckdb==2.0.0", "pyarrow==26.0.0"]
+license = "MIT"
+
+[project.scripts]
+mobility-lakehouse = "mobility_lakehouse.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

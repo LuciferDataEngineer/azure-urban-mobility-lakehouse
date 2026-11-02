@@ -1,0 +1,2 @@
+# Retain the publisher's exact CSV bytes so the provenance SHA stays valid.
+reference/taxi_zone_lookup.csv -text whitespace=cr-at-eol

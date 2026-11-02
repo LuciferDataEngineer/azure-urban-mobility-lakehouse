@@ -1,0 +1,139 @@
+{
+  "generation": "16e4886b-3c92-4e90-b7e5-1e3f06711ba3",
+  "generated_at": "2026-11-02T22:09:46.353752+00:00",
+  "contract_version": "tlc-yellow-local-v1",
+  "execution": "local DuckDB; Azure tests not executed",
+  "totals": {
+    "raw_rows": 9554778,
+    "accepted_rows": 9551921,
+    "quarantined_rows": 2857,
+    "candidate_duplicate_rows": 1,
+    "negative_adjustment_rows": 136895
+  },
+  "sources": [
+    {
+      "source_month": "2024-01",
+      "source_sha256": "c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510",
+      "source_url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet",
+      "captured_at": "2026-11-02T22:05:51.876129",
+      "file_bytes": 49961641,
+      "raw_rows": 2964624,
+      "accepted_rows": 2963736,
+      "quarantined_rows": 888,
+      "candidate_duplicate_rows": 0,
+      "negative_adjustment_rows": 37563
+    },
+    {
+      "source_month": "2024-02",
+      "source_sha256": "c76c43c18c6c6664080dd920baab4928988d5786a6b65980792ca7cd796f9f20",
+      "source_url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet",
+      "captured_at": "2026-11-02T22:06:38.614755",
+      "file_bytes": 50349284,
+      "raw_rows": 3007526,
+      "accepted_rows": 3006708,
+      "quarantined_rows": 818,
+      "candidate_duplicate_rows": 1,
+      "negative_adjustment_rows": 40732
+    },
+    {
+      "source_month": "2024-03",
+      "source_sha256": "2d4cdc8fb96726cdd3803b13b02d2e61e71d45720aff0ebc693a8bdd1f249823",
+      "source_url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet",
+      "captured_at": "2026-11-02T22:06:41.942361",
+      "file_bytes": 60078280,
+      "raw_rows": 3582628,
+      "accepted_rows": 3581477,
+      "quarantined_rows": 1151,
+      "candidate_duplicate_rows": 0,
+      "negative_adjustment_rows": 58600
+    }
+  ],
+  "monthly_metrics": [
+    {
+      "source_month": "2024-01",
+      "negative_adjustment": false,
+      "trip_count": 2926173,
+      "fare_amount_sum": "54558310.06",
+      "total_amount_sum": "80302017.00",
+      "trip_distance_sum": 10713872.639999745,
+      "mean_duration_seconds": 939.7747043664199
+    },
+    {
+      "source_month": "2024-01",
+      "negative_adjustment": true,
+      "trip_count": 37563,
+      "fare_amount_sum": "-714238.74",
+      "total_amount_sum": "-888085.09",
+      "trip_distance_sum": 112738.76999999999,
+      "mean_duration_seconds": 725.1412027793307
+    },
+    {
+      "source_month": "2024-02",
+      "negative_adjustment": false,
+      "trip_count": 2965976,
+      "fare_amount_sum": "54999685.38",
+      "total_amount_sum": "80960586.22",
+      "trip_distance_sum": 11489888.83999991,
+      "mean_duration_seconds": 961.937863961138
+    },
+    {
+      "source_month": "2024-02",
+      "negative_adjustment": true,
+      "trip_count": 40732,
+      "fare_amount_sum": "-738531.10",
+      "total_amount_sum": "-907337.10",
+      "trip_distance_sum": 121526.59999999928,
+      "mean_duration_seconds": 760.312677992733
+    },
+    {
+      "source_month": "2024-03",
+      "negative_adjustment": false,
+      "trip_count": 3522877,
+      "fare_amount_sum": "67865575.69",
+      "total_amount_sum": "98267726.92",
+      "trip_distance_sum": 15912619.039999792,
+      "mean_duration_seconds": 1003.7653829526265
+    },
+    {
+      "source_month": "2024-03",
+      "negative_adjustment": true,
+      "trip_count": 58600,
+      "fare_amount_sum": "-959582.20",
+      "total_amount_sum": "-1136628.72",
+      "trip_distance_sum": 270540.01999999856,
+      "mean_duration_seconds": 814.1561774744027
+    }
+  ],
+  "quality_reasons": [
+    {
+      "source_month": "2024-01",
+      "reason": "nonpositive_duration",
+      "row_count": 870
+    },
+    {
+      "source_month": "2024-01",
+      "reason": "pickup_outside_source_month",
+      "row_count": 18
+    },
+    {
+      "source_month": "2024-02",
+      "reason": "nonpositive_duration",
+      "row_count": 803
+    },
+    {
+      "source_month": "2024-02",
+      "reason": "pickup_outside_source_month",
+      "row_count": 15
+    },
+    {
+      "source_month": "2024-03",
+      "reason": "nonpositive_duration",
+      "row_count": 1128
+    },
+    {
+      "source_month": "2024-03",
+      "reason": "pickup_outside_source_month",
+      "row_count": 23
+    }
+  ]
+}

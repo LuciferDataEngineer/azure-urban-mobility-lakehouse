@@ -1,0 +1,80 @@
+{
+  "execution": "local only; no Azure resources deployed",
+  "python": "3.14.7",
+  "duckdb": "2.0.0",
+  "pyarrow": "26.0.0",
+  "source_checks": [
+    {
+      "month": "2024-01",
+      "source_sha256": "c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510",
+      "source_url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet",
+      "raw_rows": 2964624,
+      "accepted_rows": 2963736,
+      "quarantined_rows": 888,
+      "signed_fare_usd": "53844071.32",
+      "signed_total_usd": "79413931.91"
+    },
+    {
+      "month": "2024-02",
+      "source_sha256": "c76c43c18c6c6664080dd920baab4928988d5786a6b65980792ca7cd796f9f20",
+      "source_url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet",
+      "raw_rows": 3007526,
+      "accepted_rows": 3006708,
+      "quarantined_rows": 818,
+      "signed_fare_usd": "54261154.28",
+      "signed_total_usd": "80053249.12"
+    },
+    {
+      "month": "2024-03",
+      "source_sha256": "2d4cdc8fb96726cdd3803b13b02d2e61e71d45720aff0ebc693a8bdd1f249823",
+      "source_url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet",
+      "raw_rows": 3582628,
+      "accepted_rows": 3581477,
+      "quarantined_rows": 1151,
+      "signed_fare_usd": "66905993.49",
+      "signed_total_usd": "97131098.20"
+    }
+  ],
+  "all_source_rows_partitioned_exactly_once": true,
+  "signed_decimal_silver_gold_reconciled": true,
+  "identical_source_replays": 3,
+  "business_table_fingerprints_unchanged": true,
+  "fingerprints": {
+    "sources": [
+      3,
+      6016840032805025623,
+      "12492741096601811111"
+    ],
+    "current_sources": [
+      3,
+      18045257821019066025,
+      "21080888750802432285"
+    ],
+    "silver_trips": [
+      9551921,
+      4573722220036963452,
+      "88112219570903364317575874"
+    ],
+    "quarantine": [
+      2857,
+      5287565042895359883,
+      "26528379617728485697087"
+    ],
+    "gold_hourly": [
+      304196,
+      1075039328727685697,
+      "2801500587239410299592655"
+    ]
+  },
+  "csv_rows_exactly_compared": {
+    "hourly": 304196,
+    "quality": 6
+  },
+  "totals": {
+    "raw_rows": 9554778,
+    "accepted_rows": 9551921,
+    "quarantined_rows": 2857,
+    "candidate_duplicate_rows": 1,
+    "negative_adjustment_rows": 136895
+  }
+}

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+data/
+.tools/
+*.duckdb*
+*.parquet
+*.log
+.env*
+!.env.example
+.DS_Store
+infra/compiled/
+azure/compiled/

@@ -1,0 +1,110 @@
+{
+  "query_1": [
+    {
+      "source_month": "2024-01",
+      "source_sha256": "984e14ab61796c76d515f33e1c5f53adb6ee509e5483332b4201e6f75b215d6f",
+      "raw_rows": 6,
+      "accepted_rows": 4,
+      "quarantined_rows": 2,
+      "conserves_rows": true
+    }
+  ],
+  "query_2": [
+    {
+      "source_month": "2024-01",
+      "negative_adjustment": false,
+      "records": 3,
+      "signed_fares_usd": "27.50",
+      "signed_total_amount_usd": "32.60"
+    },
+    {
+      "source_month": "2024-01",
+      "negative_adjustment": true,
+      "records": 1,
+      "signed_fares_usd": "-5.00",
+      "signed_total_amount_usd": "-6.00"
+    }
+  ],
+  "query_3": [
+    {
+      "pickup_zone_id": 1,
+      "records": 2,
+      "mean_total_amount_usd": 12.3
+    },
+    {
+      "pickup_zone_id": 2,
+      "records": 1,
+      "mean_total_amount_usd": 8.0
+    }
+  ],
+  "query_4": [
+    {
+      "civil_hour": 10,
+      "records": 2,
+      "mean_civil_duration_seconds": 900.0
+    },
+    {
+      "civil_hour": 12,
+      "records": 1,
+      "mean_civil_duration_seconds": 600.0
+    }
+  ],
+  "query_5": [
+    {
+      "source_month": "2024-01",
+      "reason": "invalid_timestamp",
+      "row_count": 1
+    },
+    {
+      "source_month": "2024-01",
+      "reason": "nonpositive_duration",
+      "row_count": 1
+    }
+  ],
+  "query_6": [
+    {
+      "source_month": "2024-01",
+      "source_sha256": "984e14ab61796c76d515f33e1c5f53adb6ee509e5483332b4201e6f75b215d6f",
+      "captured_at": "2026-11-02T22:10:27.981837",
+      "accepted_rows": 4,
+      "quarantined_rows": 2,
+      "is_current": true
+    }
+  ],
+  "query_7": [
+    {
+      "status": "committed",
+      "attempts": 1,
+      "replays": 0
+    }
+  ],
+  "query_8": [
+    {
+      "source_month": "2024-01",
+      "candidate_duplicate_rows": 1,
+      "candidate_fraction": 0.25
+    }
+  ],
+  "top_pickup_zones": [
+    {
+      "pickup_zone_id": 1,
+      "Borough": "EWR",
+      "Zone": "Newark Airport",
+      "records": 2,
+      "recorded_charges_usd": "24.60"
+    },
+    {
+      "pickup_zone_id": 2,
+      "Borough": "Queens",
+      "Zone": "Jamaica Bay",
+      "records": 1,
+      "recorded_charges_usd": "8.00"
+    }
+  ],
+  "zone_join_validation": {
+    "records_before": 4,
+    "records_after": 4,
+    "unmatched_hourly_groups": 0,
+    "lookup_sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed"
+  }
+}
